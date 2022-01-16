@@ -20,12 +20,12 @@ def get_db() :
     finally :
         db.close()
 
-while True :
-    try :
-        conn = connect(host="localhost", database="fastapi", user="postgres", password="postgres", cursor_factory=RealDictCursor)
-        cursor = conn.cursor()
-        print("[+] Database connection Established...")
-        break
-    except Exception as error :
-        print(f"[!] Connecting to database failed!! - {error}")
-        sleep(2)
+# while True :
+#     try :
+#         conn = connect(host="localhost", database="fastapi", user="postgres", password="postgres", cursor_factory=RealDictCursor)
+#         cursor = conn.cursor()
+#         print("[+] Database connection Established...")
+#         break
+#     except Exception as error :
+#         print(f"[!] Connecting to database failed!! - {error}")
+#         sleep(2)
