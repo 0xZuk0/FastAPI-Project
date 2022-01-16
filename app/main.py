@@ -26,7 +26,7 @@ app.include_router(vote.router
 )
 @app.get("/")
 def home_page() :
-    return {"status": "Hello World!"}
+    return {"message": "Hello There", "author": "Dipankar Lama"}
 
 
 
